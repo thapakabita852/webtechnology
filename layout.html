@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=family=Mulish:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <style>
+            *{
+                margin: 0;
+                font-family: 'Mulish', sans-serif;
+            }
+            *, *::before, *::after {
+                box-sizing: border-box;
+            }
+            body{
+                font-size: 18px;
+                line-height: 1.5;
+                color: #fff;
+            }
+            a{
+                text-decoration: none;
+            }
+            a:hover{
+                text-decoration: none;
+            }
+            h1,h2,h3,h4{
+                line-height: 1.2;
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }
+            ul{
+                padding: 0;
+                list-style: none;
+                margin-top: 80px;
+            }
+            li{
+                margin: 0;
+                font-size: 34px;
+                line-height: 1.5;
+            }
+            h2{
+                font-size: 80px;
+                margin-bottom: 20px;
+            }
+            h3{
+                font-size: 34px;
+                font-weight: 400;
+            }
+            .ph-banner,.ph-contact{
+                background-color: #0C3B2E;
+            }
+            .ph-banner__content,.ph-sponser__content{
+                display: flex;
+                flex-wrap: wrap;
+                max-height: 100vh;
+                align-content: space-between;
+                height:650px;
+            }
+            .ph-btn{
+                padding: 12px 45px;
+                background-color: #FFBA00;
+                border-radius: 25px;
+                transition: all .5s ease-in-out;
+                display: inline-block;
+                text-align: center;
+                color: #222;
+                font-weight: 700;
+                margin-top: 60px;
+            }
+            .ph-btn:hover{
+                background-color: #3fff00;
+            }
+            .ph-banner{
+                height: 100vh;
+                min-height: 650px;
+            }
+            .ph-banner img{
+                width: 100%;
+                object-fit: cover;
+                object-position: 75%;
+            }
+            .ph-col-7{
+                width: 58.33%;
+                float: left;
+                }
+                
+            .ph-banner .ph-col-5{
+                height: 100vh;
+
+            }
+            .ph-about, 
+            .ph-banner .ph-col-7,
+            .ph-sponser .ph-col-6:last-of-type{
+                
+                padding: 120px;
+            }
+            .ph-col-5   {
+                    float: right;
+                    width: 41.67%;
+                }
+                
+            .ph-banner .ph-col-5 img,.ph-section__image{
+                height: 100%;
+            }
+            .ph-about,.ph-sponser{
+                background-color: #6d9773;
+            }
+            .ph-keynote{
+                background-color: #ffba00;
+                color: #222;
+                text-align: center;
+                padding: 60px;
+            }
+            .ph-keynote .ph-row{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+                justify-content: space-around;
+            }
+            .ph-keynote img{    width: 400px;
+                max-height: 300px;
+                object-fit: cover;
+                object-position: 0 -60px;
+                margin-bottom: 30px;
+            }
+            .ph-keynote__content{
+                margin-bottom: 30px;
+            }
+            
+            .ph-keynote h2{
+                margin-bottom: 50px;
+            }
+            .ph-keynote h3{
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+            .ph-keynote small{
+                font-size: 20px;
+                display: block;
+            }
+            .ph-keynote__date{
+                font-weight: 900;
+                font-size: 20px;
+            }
+            .ph-col-6{
+                width: 50%;
+            }
+            .ph-sponser{
+                
+    height: 100vh;
+            }
+            .ph-sponser .ph-col-6:first-of-type{
+                float: left;
+            }
+            .ph-sponser .ph-col-6:last-of-type{
+                float: right;
+            }
+            .ph-sponser img{
+                height: 100vh;
+                object-fit: cover;
+                object-position: center;
+            }
+            @media screen and (max-width:1620px ){
+                h2{
+                    font-size: 50px;
+                }
+                li{
+                    font-size: 28px;
+                }
+                .ph-btn{
+                    padding: 12px 20px;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+            }
+            @media screen and (max-width:1024px ){
+                .ph-about .ph-col-5, .ph-about .ph-col-7 {
+                float: unset;
+                width: auto;
+                }
+                .ph-about, .ph-banner .ph-col-7, .ph-sponser .ph-col-6:last-of-type{
+                    padding: 60px;
+                }
+            }
+            @media screen and (max-width:800px ){
+                .ph-col-5, .ph-col-7,.ph-sponser .ph-col-6:first-of-type,.ph-sponser .ph-col-6:last-of-type {
+                float: unset;
+                width: auto;
+                }
+                .ph-banner,.ph-banner .ph-col-5 img, .ph-section__image,.ph-banner__content, .ph-sponser__content,.ph-banner .ph-col-5,.ph-sponser{
+                    height: auto;
+                }
+                .ph-contact .ph-row{
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-flow: wrap-reverse;
+                    width: 100%;
+                }
+                .ph-contact img{
+                    margin-top: 0px !important;
+                }
+            }
+            @media screen and (max-width:550px ){
+                *{
+                    text-align: center;
+                    justify-content: center;
+                }
+                .ph-about, .ph-banner .ph-col-7, .ph-sponser .ph-col-6:last-of-type{
+                    padding: 30px 15px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <section class="ph-banner">
+                <div class="ph-row">
+                    <div class="ph-col-7">
+                        <div class="ph-banner__content">
+                            <div class="ph-banner__content--title">
+                                <h2>
+                                    Selling online <br>is vital to<br> business growth.
+                                </h2>
+                                <h3>
+                                    2025 grow your e-Commerce Confrence
+                                </h3>
+                            </div>
+                            <div class="ph-banner__content--discription">
+                                <p>
+                                    September 16-18, 2025
+                                </p>
+                                <p>
+                                    Paragon One Plaza and Sky Garden
+                                </p>
+                                <a href="" class="ph-btn">
+                                    BOOK NOW FOR EARLY BIRD PRICES
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ph-col-5">
+                        <div class="ph-section__image">
+                            <img src="Selling online.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
