@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Parent{
+    background-color:orange;
+    height: 100vh;
+}
+
+.Parent h1{
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 40px;
+    padding-bottom:40px ;
+}
+.Flex-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Child img{
+    height: 300px;
+    width: 300px;
+    padding-bottom: 30px;
+}
+.text{
+    text-align: center;
+}
+.text h3{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+.text p{
+    font-size: 20px;
+}
+.text h4{
+    padding-top: 25px;
+    font-size: 20px;
+    font-weight: 900;
+}
+@media (max-width:901px ){
+    .Parent {
+        height: auto;
+    }
+    .Flex-container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
